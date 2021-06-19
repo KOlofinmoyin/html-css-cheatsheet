@@ -1,6 +1,8 @@
 # HTML CSS Cheatsheet
 Basic structure and styling exercise explaining the semantic use of HTML elements.
 
+<img width="717" alt="Screenshot 2021-06-19 at 11 18 28" src="https://user-images.githubusercontent.com/33905131/122639170-3bdd0100-d0f0-11eb-9b5d-15d79deba03e.png">
+
 
 ### Document tags
 + `<title>`
