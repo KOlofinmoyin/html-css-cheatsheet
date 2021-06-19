@@ -83,3 +83,5 @@ Basic structure and styling exercise explaining the semantic use of HTML element
 
 + `<div>`
 + `<span>`
+
+<cite><a href="https://learn-the-web.algonquindesign.ca/topics/html-semantics-cheat-sheet/">To see further by climbing on the shoulders of others... 🙏🏾</a><cite>
