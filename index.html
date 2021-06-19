@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Kenny's HTML/ CSS Cheatsheet</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header>
+      <h1>Kenny's HTML/ CSS Cheatsheet</h1>
+    </header>
+    <main>
+      <section>
+        <article class="document">
+          <h3>Document</h3>
+    <div class="element-tag">
+    <p id="title">&lt;title&gt;</p>
+    <p>Second most important piece of content.</p>
+    <p>Shown in the browser tab & search results.</p>
+    <p>Should be unique for every page on the site.</p>
+    </div>
+
+    <div class="element-tag">
+    <p id="link">&lt;link href="…" rel="stylesheet"&gt;</p>
+    <p> For linking CSS and other resources like feeds. </p>
+    <p><mark>href</mark> is the path the file.</p>
+    <p> <mark>rel</mark> has different values for other resources.</p>
+    </div>
+
+    <div class="element-tag">
+      <p id="header">&lt;header&gt;</p>
+      <p>When inside <mark>&lt;body&gt;</mark> it’s the website masthead.</p>
+      <p>When inside <mark>&lt;article&gt;</mark> it’s the most important information.</p>
+    </div>
+
+    <div class="element-tag">
+      <p id="footer">&lt;footer&gt;</p>
+      <p>When inside <mark>&lt;body&gt;</mark> it’s the website footer.</p>
+      <p>When inside <mark>&lt;article&gt;</mark> it’s the least important information.</p>
+    </div>
+
+    <div class="element-tag">
+        <p id="main">&lt;main&gt;</p>
+        <p>Primary content of the page.</p>
+    </div>
+
+    <div class="element-tag">
+        <p id="nav">&lt;nav&gt;</p>
+        <p>Defines a group a navigation links.</p>
+    </div>
+
+    <div class="element-tag">
+        <p id="article">&lt;article&gt;</p>
+        <p>A piece of content that’s independent.</p>
+        <p>Could be removed from this website and still make sense.</p>
+    </div>
+
+    <div class="element-tag">
+        <p id="section">&lt;section&gt;</p>
+        <p>A group in a series of related content pieces.</p>
+    </div>
+
+    <div class="element-tag">
+      <p id="aside">&lt;aside&gt;</p>
+      <p>Secondary content not required to understand the main content.</p>
+    </div>
+
+    <div class="subheading">
+        <p>CSS link tag</p>
+        <p>&lt;link href="css/main.css" rel="stylesheet"&gt;</p>
+    </div>
+
+    <div class="subheading">
+      <p>Navigation inside header</p>
+      &lt;header&gt;<br>
+      &lt;nav&gt;<br>
+        &lt;ul&gt;<br>
+          &lt;li&gt;&lt;a href="#"&gt;Stegosaurus&lt;/a&gt;&lt;/li&gt;<br>
+          &lt;li&gt;&lt;a href="#"&gt;Triceratops&lt;/a&gt;&lt;/li&gt;<br>
+          &lt;li&gt;&lt;a href="#"&gt;Ankylosaurus&lt;/a&gt;&lt;/li&gt;<br>
+        &lt;/ul&gt;<br>
+      &lt;/nav&gt; <br>
+      &lt;/header&gt;
+    </div>
+
+    <div class="subheading">
+    <p>Main content groups</p>
+
+    &lt;body&gt;<br>
+    &lt;header&gt;<br>
+      &lt;nav&gt;…&lt;/nav&gt;<br>
+    &lt;/header&gt;<br>
+<br>
+
+  <code>
+    &lt;main><br>
+      &lt;h1&gt;Kenny's website&lt;/h1&gt;<br>
+    &lt;/main&gt;
+  </code>
+<br>
+<br>
+  <code>
+    &lt;footer><br>
+      &lt;p&gt;© 2021 Kenny's website&lt;/p&gt;<br>
+    &lt;/footer&gt;<br>
+    &lt;/body&gt;
+  </code>
+    </div>
+    </article>
+  </section>
+
+<section>
+  <h3>Lists</h3>
+  <article class="element-tag">
+    <p>&lt;ul&gt;</p>
+    <p>An unordered list—the order of items isn’t important.</p>
+    <p>Can only have <mark>&lt;li&gt;</mark> elements as direct children.</p>
+
+    <p class="example">Example usage:</p>
+    <p class="subheading">Unordered list</p>
+
+    <code>
+      &lt;ul&gt;<br>
+      &lt;li&gt;Tyrannosaurus&lt;/li&gt;<br>
+      &lt;li&gt;Spinosaurus&lt;/li&gt;<br>
+      &lt;li&gt;Velociraptor&lt;/li&gt;<br>
+      &lt;/ul&gt;
+    </code>
+  </article>
+
+  <article class="element-tag">
+    <p>&lt;ol&gt;</p>
+    <p>An ordered list—the order of the items is important.</p>
+    <p>Could be alphabetical, numerical, best to worst, etc.</p>
+    <p>Can only have <mark>&lt;li&gt;</mark> elements as direct children.</p>
+
+    <p class="example">Example usage:</p>
+    <p class="subheading">Ordered list</p>
+
+    <code>
+      &lt;ol&gt;<br>
+      &lt;li&gt;Mercury&lt;/li&gt;<br>
+      &lt;li&gt;Venus&lt;/li&gt;<br>
+      &lt;li&gt;Earth&lt;/li&gt;<br>
+      &lt;li&gt;Mars&lt;/li&gt;<br>
+      &lt;/ol&gt;
+    </code>
+  </article>
+
+
+  <article class="element-tag">
+    <p>&lt;li&gt;</p>
+    <p>A single list item.</p>
+    <p>Must be inside a <mark>&lt;ul&gt;, &lt;ol&gt; or &lt;menu&gt;</mark>.</p>
+    <p>Can have most other elements inside it.</p>
+  </article>
+
+
+  <article class="element-tag">
+      <p>&lt;dl&gt;</p>
+      <p>A description list—a grouping of terms and definitions.</p>
+      <p>Words & definitions, titles & summaries, data points, etc.</p>
+      <p>Can only have <mark>&lt;dt&gt;</mark> and <mark>&lt;dd&gt;</mark> elements as direct children.</p>
+
+      <p class="example">Example usage:</p>
+      <p class="subheading">Description list</p>
+
+      <code>
+        &lt;dl&gt;<br>
+        &lt;dt&gt;Length&lt;/dt&gt;<br>
+        &lt;dd&gt;2.3 m&lt;/dd&gt;<br>
+        &lt;dt&gt;Weight&lt;/dt&gt;<br>
+        &lt;dd&gt;4 tonnes&lt;/dd&gt;<br>
+        &lt;/dl&gt;
+      </code>
+  </article>
+
+
+  <article class="element-tag">
+      <p>&lt;dt&gt;</p>
+      <p>Description title, the term of the item.</p>
+      <p>Must come before the <mark>&lt;dd&gt;</mark>.</p>
+  </article>
+
+
+  <article class="element-tag">
+      <p>&lt;dd&gt;</p>
+      <p>Description definition, the data, or text of the item.</p>
+      <p>Can be multiple <mark>&lt;dd&gt;</mark> tags underneath one <mark>&lt;dt&gt;</mark>.</p>
+  </article>
+
+
+  <article class="element-tag">
+    <p>&lt;menu&gt;</p>
+    <p>For semantically marking up a web application’s toolbar of buttons.</p>
+    <p>The &lt;menu&gt; tag also uses &lt;li&gt; tags inside—one for each toolbar button.</p>
+    <p>You may still have to remove the bullets.</p>
+
+    <p class="example">Example usage:</p>
+    <p class="subheading">Menu toolbar list</p>
+
+    <code>
+      &lt;menu&gt;<br>
+      &lt;li&gt;&lt;button&gt;Like&lt;/button&gt;&lt;/li&gt;<br>
+      &gt;li&gt;&lt;button&gt;Share&lt;/button&gt;&lt;/li&gt;<br>
+      &lt;li&gt;&lt;button&gt;Comment&lt;/button&gt;&lt;/li&gt;<br>
+      &lt;/menu&gt;
+    </code>
+  </article>
+</section>
+
+<section>
+    <h3>Text</h3>
+    <article class="element-tag">
+      <p>&lt;a href="…"&gt;</p>
+      <p>For making hyperlinks.</p>
+      <p><mark>href</mark> is the path to where the link should go.</p>
+    </article>
+
+    <article class="element-tag">
+      <p>&lt;h1&gt;</p>
+      <p>The most important piece of content on the page.</p>
+      <p>On the homepage this should be the company’s name.</p>
+      <p>On inside pages this should be the page title.</p>
+    </article>
+
+    <article class="element-tag">
+      <p>&lt;h2&gt;, &lt;h3&gt;, &lt;h4&gt;, &lt;h5&gt;, &lt;h6&gt;</p>
+      <p>Content headings, each a sub-heading of the one above.</p>
+      <p>The <mark>&lt;h2&gt;</mark> is a sub-heading of <mark>&lt;h1&gt;</mark>, <mark>&lt;h3&gt;</mark> a sub-heading of <mark>&lt;h2&gt;</mark>, etc.</p>
+    </article>
+
+    <article class="element-tag">
+      <p>&lt;hgroup&gt;</p>
+      <p>Allows you to group multiple headings together and have them semantically treated as a single heading.</p>
+      <p>It’s primary purpose is for subheadings.</p>
+
+      <p class="example">Example usage:</p>
+      <p class="subheading">Heading groups</p>
+
+      <code>
+        &lt;hgroup&gt;<br>
+        &lt;h1&gt;Star Wars&lt;/h1&gt;<br>
+        &lt;h2&gt;The Empire Strikes Back&lt;/h2&gt;<br>
+        &lt;/hgroup&gt;
+      </code>
+    </article>
+
+    <article class="element-tag">
+      <p>&lt;p&gt;</p>
+      <p>A generic paragraph of text.</p>
+    </article>
+
+    <article class="element-tag">
+      <p>&lt;blockquote&gt;</p>
+      <p>A large, stand alone quote from another source.</p>
+
+      <p class="example">Example usage:</p>
+      <p class="subheading">Blockquotes</p>
+
+      <code>
+        &lt;blockquote&gt;<br>
+        &lt;p&gt;Dinosaurs may be extinct from the face of the planet, but they are alive and well in our imaginations.&lt;/p&gt;<br>
+        &lt;footer&gt;— &lt;cite&gt;Steve Miller&lt;/cite&gt;&lt;/footer&gt;<br>
+        &lt;/blockquote&gt;
+      </code>
+    </article>
+
+    <article class="element-tag">
+      <p>&lt;cite&gt;</p>
+      <p>A citation for another source, often used with quotations.</p>
+      <p>A person’s name, a URL, a book, a movie title, etc.</p>
+    </article>
+
+    <article class="element-tag">
+      <p>&lt;q&gt;</p>
+      <p>A small quotation embedded within other content.</p>
+    </article>
+
+    <article class="element-tag">
+      <p>&lt;em&gt;</p>
+      <p>A string of emphasized, slightly more important text.</p>
+      <p>Screen readers will change their voice for this text.</p>
+    </article>
+
+    <article class="element-tag">
+      <p>&lt;strong&gt;</p>
+      <p>A string of highly emphasized, much more important text.</p>
+      <p>Screen readers will change their voice for this text.</p>
+    </article>
+
+    <article class="element-tag">
+      <p>&lt;ins datetime="…"&gt;</p>
+      <p>Content that was inserted after the document was published.</p>
+      <p>datetime defines when it was added.</p>
+
+      <code>
+          &lt;ins datetime="2014-04-14"&gt;SpaceX&lt;/ins&gt;
+      </code>
+    </article>
+
+    <article class="element-tag">
+      <p>&lt;del datetime="…"&gt;</p>
+      <p>Content that was deleted after the document was published.</p>
+      <p>datetime defines when it was removed.</p>
+
+      <p class="example">Example usage:</p>
+      <p class="subheading">Text edits</p>
+
+      <code>
+        &lt;p&gt;Launchpad 39A owned by &lt;del datetime="2014-04-14"&gt;NASA&lt;/del&gt;&lt;/p&gt;
+      </code>
+    </article>
+
+
+    <article class="element-tag">
+      <p class="example">Example usage:</p>
+      <p class="subheading">Other languages</p>
+
+      <code>
+          &lt;i lang="fr"&gt;Bonjour&lt;/i&gt;
+      </code>
+    </article>
+
+    <article class="element-tag">
+      <p>&lt;abbr title="…"&gt;</p>
+      <p>An acronym or abbreviation, like <mark>“HTML”, “CSS”</mark>, etc.</p>
+      <p><mark>title</mark> contains the expanded version, like <mark>“Hypertext Markup Language”</mark>.</p>
+
+      <p class="example">Example usage:</p>
+      <p class="subheading">Abbreviations</p>
+
+      <code>
+        &lt;abbr title="Star Trek: The Wrath of Khan"&gt;ST:TWOK&lt;/abbr&gt;
+      </code>
+
+    </article>
+
+    <article class="element-tag">
+      <p>&lt;dfn&gt;</p>
+      <p>A definition of a term on the page.</p>
+      <p>Should only be used once of the term.</p>
+    </article>
+
+    <article class="element-tag">
+      <p>&lt;mark&gt;</p>
+      <p>Used to highlight a piece of text for reference.</p>
+      <p>The keywords in a search results page, the current navigation item.</p>
+    </article>
+
+    <article class="element-tag">
+      <p>&lt;i&gt;</p>
+      <p>Defines technical term, a ship name, a book title, a thought, sarcasm, another language.</p>
+    </article>
+
+
+    <article class="element-tag">
+      <p>&lt;b&gt;</p>
+      <p>Defines a keyword, like product name in a review, a lead sentence in a paragraph.</p>
+    </article>
+
+    <article class="element-tag">
+      <p>&lt;s&gt;</p>
+      <p>Content that’s no longer relevant to the document.</p>
+      <p>Consider if the <mark>&lt;del&gt;</mark> element is better suited first.</p>
+    </article>
+
+    <article class="element-tag">
+      <p>&lt;u&gt;</p>
+      <p>Labels the text as having a non-textual annotation.</p>
+      <p>A misspelled word, a Chinese proper name, etc.</p>
+    </article>
+
+    <article class="element-tag">
+      <p>&lt;small&gt;</p>
+      <p>Represents side comments and fine print.</p>
+    </article>
+
+    <article class="element-tag">
+      <p>&lt;address&gt;</p>
+      <p>Contact information, email, tel, postal address, etc.</p>
+
+      <p class="example">Example usage:</p>
+      <p class="subheading">Addresses</p>
+
+      <code>
+        &lt;address&gt;
+        Jet Propulsion Laboratory <br>
+        4800 Oak Grove Drive<br>
+        Pasadena, California<br>
+        91109<br>
+        &lt;/address&gt;
+      </code>
+    </article>
+</section>
+
+<section>
+  <article class="element-tag">
+    <h3>Images & media</h3>
+    <p>&lt;img src="…" alt="…"&gt;</p>
+    <p><mark>Embeds</mark> an image that’s important to the content.</p>
+    <p><mark>src</mark> is a path to the image file.</p>
+    <p><mark>alt</mark> describes the image if it cannot be seen.</p>
+
+    <p class="example">Example usage:</p>
+    <p class="subheading">Basic images</p>
+
+    <code>
+        &lt;img src="images/dino.jpg" alt="An beautiful, long-necked Brontosaurus"&gt;
+    </code>
+  </article>
+
+  <article class="element-tag">
+    <p>&lt;figure&gt;</p>
+    <p>Embeds annotated images, illustrations, photos, code, etc.</p>
+    <p>Could be moved out of place and would still make sense.</p>
+
+    <p class="example">Example usage:</p>
+    <p class="subheading">Figures & captions</p>
+
+
+    <p>Use only if there’s a caption.</p>
+    <code>
+      &lt;figure&gt;<br>
+      &lt;img src="images/dino-small.jpg" alt=""&gt;<br>
+      &lt;figcaption>So many dinosaurs I can’t even count!&lt;/figcaption&gt;<br>
+      &lt;/figure&gt;
+    </code>
+  </article>
+
+  <article class="element-tag">
+    <p>&lt;figcaption&gt;</p>
+    <p>For adding a caption/annotation to the &lt;figure&gt;.</p>
+    <p>Must be inside a &lt;figure&gt; element—cannot stand alone.</p>
+  </article>
+
+  <article class="element-tag">
+    <p>&lt;picture&gt;</p>
+    <p>Responsive image insertion—allows developers to provide different images for different contexts.</p>
+  </article>
+
+  <article class="element-tag">
+    <p>&lt;video poster="…" autoplay loop muted controls&gt;</p>
+    <p>For embedding movies into a website.</p>
+    <p>poster is the path to an image that’s displayed before the video plays.</p>
+    <p>autoplay will hint the video to start automatically.</p>
+    <p>loop triggers whether the video should repeat or not.</p>
+    <p>muted can be added to not play sound by default.</p>
+    <p>controls shows or hides the browser’s player buttons.</p>
+  </article>
+
+  <article class="element-tag">
+    <p>&lt;audio autoplay loop muted controls&gt;</p>
+    <p>For embedding sounds into a website.</p>
+    <p>autoplay will hint the audio to start automatically.</p>
+    <p>loop triggers whether the audio should repeat or not.</p>
+    <p>muted can be added to not play sound by default.</p>
+    <p>controls shows or hides the browser’s player buttons.</p>
+  </article>
+
+  <article class="element-tag">
+    <p>&lt;source&gt;</p>
+    <p>Must be inside <mark>&lt;picture&gt;</mark>, <mark>&lt;video&gt;</mark> or <mark>&lt;audio&gt;</mark> to define the different versions of content.</p>
+    <p>For example, in video it gives paths to the MP4 and WEBM formats.</p>
+  </article>
+
+  <article class="element-tag">
+    <p>&lt;track&gt;</p>
+    <p>Used to pair captions, chapters, etc. with <mark>&lt;video&gt;</mark> elements.</p>
+  </article>
+
+
+
+  Responsive images
+
+  See Responsive & retina images for details.
+
+  <picture>
+  <source media="(min-width: 60em)" srcset="images/dino-wide.jpg">
+  <source media="(min-width: 38em)" srcset="images/dino-rectangle.jpg">
+  <img src="images/dino-small.jpg" alt="All the dinosaurs!">
+  </picture>
+
+</section>
+
+<section>
+  <h3>Data & code</h3>
+  <article class="element-tag">
+    <p>&lt;sub&gt;</p>
+    <p>Defines text as being subscript.</p>
+  </article>
+
+  <article class="element-tag">
+    <p>&lt;sup&gt;</p>
+    <p>Defines text as being superscript.</p>
+
+    <p class="example">Example usage:</p>
+    <p class="subheading">Maths</p>
+
+    <code>
+      E = mc&lt;sup&gt;2&lt;/sup&gt;
+    </code>
+  </article>
+
+  <article class="element-tag">
+    <p>&lt;var&gt;</p>
+    <p>Represents a variable in math or programming.</p>
+  </article>
+
+  <article class="element-tag">
+    <p>&lt;time datetime="…"&gt;</p>
+    <p>Marks some text as a time or date.</p>
+    <p><mark>datetime</mark> defines the machine readable version.</p>
+
+    <p class="example">Example usage:</p>
+    <p class="subheading">Time</p>
+
+    <code>
+      Apollo 11 landed on the moon &lt;time datetime="1969-07-20T20:18"&gt;July 20, 1969&lt;/time&gt;
+    </code>
+  </article>
+
+  <article class="element-tag">
+    <p>&lt;data value="…"&gt;</p>
+    <p>Marks elements as being a numerical piece of information.</p>
+    <p><mark>value</mark> provides the machine readable version.</p>
+
+
+    <p class="example">Example usage:</p>
+    <p class="subheading">Data</p>
+
+    <code>
+        Argentinosaurus weighted approximately &lt;data value="90"&gt;90 tonnes&lt;/data&gt;
+    </code>
+  </article>
+
+  <article class="element-tag">
+    <p>&lt;meter value="…" min="…" max="…"&gt;</p>
+    <p>Represents a single number in a range of numbers.</p>
+    <p><mark>value</mark> is the current number.</p>
+    <p><mark>min</mark> is the minimum number.</p>
+    <p><mark>max</mark> is the maximum number.</p>
+  </article>
+
+  <article class="element-tag">
+    <p>&lt;progress value="…" min="…" max="…"&gt;</p>
+    <p>Represents the current position in a series of steps.</p>
+    <p><mark>value</mark> is the current position.</p>
+    <p><mark>min</mark> is the minimum position.</p>
+    <p><mark>max</mark> is the maximum position.</p>
+  </article>
+
+  <article class="element-tag">
+    <p>&lt;code&gt;</p>
+    <p>Defines a piece of text as a code sample.</p>
+  </article>
+
+  <article class="element-tag">
+    <p>&lt;pre&gt;</p>
+    <p>A piece of text that has a specific formatting, where tabs, whitespaces, etc. should be maintained.</p>
+  </article>
+
+  <article class="element-tag">
+    <p>&lt;kbd&gt;</p>
+    <p>Something a user should type into their computer.</p>
+  </article>
+
+  <article class="element-tag">
+    <p>&lt;samp&gt;</p>
+    <p>Something a user should see output from a computer.</p>
+  </article>
+
+</section>
+
+<section>
+  <h3>Meaningless tags</h3>
+
+  <article class="element-tag">
+    <p>&lt;div&gt;</p>
+    <p>Inherits meaning from its children.</p>
+    <p>Divides content into logical groups, when no other tag is better suited.</p>
+    <p>Has restrictions on what elements it can be inside.</p>
+  </article>
+
+  <article class="element-tag">
+    <p>&lt;span&gt;</p>
+    <p>Inherits meaning from its children.</p>
+  </article>
+</section>
+
+</main>
+      <footer>
+        &copy; Kehinde Olofinmoyin 2021
+      </footer>
+    </body>
+  </html>
